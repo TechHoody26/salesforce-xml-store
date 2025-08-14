@@ -1,1 +1,1 @@
-trigger MyTrigger on Account (before insert, after insert, after Update) {}
+trigger MyTrigger on Account (before insert, after insert, after Update, After Insert) {}
