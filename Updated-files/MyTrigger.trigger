@@ -1,0 +1,1 @@
+trigger MyTrigger on Account (before insert, after insert) {}
