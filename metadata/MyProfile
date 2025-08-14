@@ -1,0 +1,34 @@
+{
+  "Profile": {
+    "xmlns": "http://soap.sforce.com/2006/04/metadata",
+    "applicationVisibilities": {
+      "application": "PubApps__Myriad_Publishing",
+      "default": false,
+      "visible": true
+    },
+    "custom": true,
+    "objectPermissions": {
+      "object": "TestWeblinks__c",
+      "allowCreate": true,
+      "allowDelete": true,
+      "allowEdit": true,
+      "allowRead": true,
+      "viewAllRecords": false,
+      "modifyAllRecords": false,
+      "viewAllFields": false
+    },
+    "recordTypeVisibilities": {
+      "default": true,
+      "recordType": "TestWeblinks__c.My First Recordtype",
+      "visible": true
+    },
+    "tabVisibilities": {
+      "tab": "Myriad Publications",
+      "visibility": "DefaultOn"
+    },
+    "userPermissions": {
+      "enabled": true,
+      "name": "APIEnabled"
+    }
+  }
+}
