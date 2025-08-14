@@ -1,0 +1,1 @@
+public class MyClass { public void doSomething(List<Object>, Map<key, value>) {} }
