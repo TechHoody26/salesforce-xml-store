@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Editable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field is editable</description>
+        <externalId>false</externalId>
+        <label>Editable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Field_Name__c</fullName>
+        <description>Name of the field</description>
+        <externalId>false</externalId>
+        <label>Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Permission_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the related Object Permission record</description>
+        <externalId>false</externalId>
+        <label>Object Permission Lookup</label>
+        <referenceTo>Profile_Object_Permission__c</referenceTo>
+        <relationshipLabel>Field Permissions by Object Permission</relationshipLabel>
+        <relationshipName>FieldPermsByObjPerm</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Profile_Name_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the Profile Admin record (displays Profile Name)</description>
+        <externalId>false</externalId>
+        <label>Profile Name Lookup</label>
+        <referenceTo>Profile_Admin__c</referenceTo>
+        <relationshipLabel>Field Permissions by Name</relationshipLabel>
+        <relationshipName>Field_Permissions_By_Name</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Profile_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the Profile Admin record</description>
+        <externalId>false</externalId>
+        <label>Profile Name</label>
+        <referenceTo>Profile_Admin__c</referenceTo>
+        <relationshipLabel>Field Permissions</relationshipLabel>
+        <relationshipName>Field_Permissions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Readable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field is readable</description>
+        <externalId>false</externalId>
+        <label>Readable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tab_Visibility_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the related Tab Visibility record</description>
+        <externalId>false</externalId>
+        <label>Tab Visibility Lookup</label>
+        <referenceTo>Profile_Tab_Visibility__c</referenceTo>
+        <relationshipLabel>Field Permissions by Tab Visibility</relationshipLabel>
+        <relationshipName>FieldPermsByTabVis</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Profile Field Permission</label>
+    <nameField>
+        <displayFormat>PFP-{0000}</displayFormat>
+        <label>Field Permission Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Profile Field Permissions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
