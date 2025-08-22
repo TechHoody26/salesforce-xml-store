@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Allow_Create__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allow create permission</description>
+        <externalId>false</externalId>
+        <label>Allow Create</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Delete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allow delete permission</description>
+        <externalId>false</externalId>
+        <label>Allow Delete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Edit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allow edit permission</description>
+        <externalId>false</externalId>
+        <label>Allow Edit</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Read__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allow read permission</description>
+        <externalId>false</externalId>
+        <label>Allow Read</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Modify_All_Records__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Modify all records permission</description>
+        <externalId>false</externalId>
+        <label>Modify All Records</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <description>Name of the object</description>
+        <externalId>false</externalId>
+        <label>Object Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profile_Name_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the Profile Admin record (displays Profile Name)</description>
+        <externalId>false</externalId>
+        <label>Profile Name Lookup</label>
+        <referenceTo>Profile_Admin__c</referenceTo>
+        <relationshipLabel>Object Permissions by Name</relationshipLabel>
+        <relationshipName>Object_Permissions_By_Name</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Profile_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the Profile Admin record</description>
+        <externalId>false</externalId>
+        <label>Profile Name</label>
+        <referenceTo>Profile_Admin__c</referenceTo>
+        <relationshipLabel>Object Permissions</relationshipLabel>
+        <relationshipName>Object_Permissions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>View_All_Fields__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>View all fields permission</description>
+        <externalId>false</externalId>
+        <label>View All Fields</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>View_All_Records__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>View all records permission</description>
+        <externalId>false</externalId>
+        <label>View All Records</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Profile Object Permission</label>
+    <nameField>
+        <displayFormat>POP-{0000}</displayFormat>
+        <label>Object Permission Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Profile Object Permissions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
